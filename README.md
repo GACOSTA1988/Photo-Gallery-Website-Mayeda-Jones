@@ -1,6 +1,8 @@
 1. ZOOM meeting with client to discuss website and layout plan
 
 2. created google share drive and trasnferred images from client
+
+3. Still planning views and layout
    This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
