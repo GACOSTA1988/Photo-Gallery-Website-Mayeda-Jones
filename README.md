@@ -3,6 +3,9 @@
 2. created google share drive and trasnferred images from client
 
 3. Still planning views and layout
+
+4. Researching how to protect images from piracy
+
    This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
