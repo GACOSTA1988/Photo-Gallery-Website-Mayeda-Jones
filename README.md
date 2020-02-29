@@ -9,6 +9,9 @@
 5. #4 continued
 
 6. Reading js scramble docs for asset protection
+
+7. #6 continued
+
    This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
