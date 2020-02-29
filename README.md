@@ -7,6 +7,8 @@
 4. Researching how to protect images from piracy
 
 5. #4 continued
+
+6. Reading js scramble docs for asset protection
    This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
