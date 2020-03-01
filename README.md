@@ -12,6 +12,8 @@
 
 7. #6 continued
 
+8. Created Figma account and reading the docs
+
    This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
