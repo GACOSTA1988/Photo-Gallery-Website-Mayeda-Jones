@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "file-loader": "^1.1.6",
+    "stripe": "^8.25.0",
     "url-loader": "^0.6.2"
   }
 }
