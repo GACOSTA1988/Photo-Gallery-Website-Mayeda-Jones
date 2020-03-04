@@ -17,9 +17,12 @@
     "uuid": "^3.2.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "run-p start:**",
+    "start:app": "react-scripts start",
     "start:lambda": "netlify-lambda serve src/lambda",
-    "build": "react-scripts build",
+    "build": "run-p build:**",
+    "build:app": "react-scripts build",
+    "build:lambda": "netlify-lambda build src/lambda",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,6 +44,7 @@
   "devDependencies": {
     "file-loader": "^1.1.6",
     "netlify-lambda": "^1.6.3",
+    "npm-run-all": "^4.1.5",
     "stripe": "^8.25.0",
     "url-loader": "^0.6.2"
   }
