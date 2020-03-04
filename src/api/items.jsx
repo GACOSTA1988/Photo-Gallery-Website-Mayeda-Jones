@@ -1,3 +1,8 @@
+import Cart from "../components/Cart/Cart";
+
+// FAKES ITEMS TO SALE/WOULD USUALLY SEND API CALL IN HERE TO RETRIEVE PRODUCT INFO
+
+// LIST ITEMS GET IMPORTED TO APP COMPONENT
 export default [
   {
     id: 1,
