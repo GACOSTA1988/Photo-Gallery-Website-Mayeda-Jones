@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-// import { Elements, StripeProvider } from "react-stripe-elements";
+import { Elements, StripeProvider } from "react-stripe-elements";
 import { Switch, Route } from "react-router-dom";
 import { v4 } from "uuid";
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import items from "./api/items";
 import Product from "./components/Product/Product";
 import Cart from "./components/Cart/Cart";
-// import CheckoutForm from "./components/CheckoutForm/CheckoutForm";
+import CheckoutForm from "./components/CheckoutForm/CheckoutForm";
 import logo from "./assests/logo/Logo.png";
-import "./App.css";
 
 // LINE 16-MAPS TROUGH ARRAY OF ITEMS FROM API JS AND PASSES PROPS DOWN INTO PRODUCT COMPONENT
 function App() {
@@ -60,6 +60,13 @@ function App() {
           ))}
         </div>
         <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
+        {itemsInCart.length > 0 && (
+          <StripeProvider apiKey="your_public_key">
+            <Elements>
+              <CheckoutForm totalCost={totalCost} />
+            </Elements>
+          </StripeProvider>
+        )}
       </main>
     </div>
   );
