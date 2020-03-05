@@ -1,7 +1,6 @@
-import React from "react";
-import "./CartItem.css";
+import React from 'react';
+import './CartItem.css';
 
-// RECEIVES PROPS FROM CART COMPONENT
 export default function CartItem({ title, cost, quantity }) {
   return (
     <div className="CartItem">

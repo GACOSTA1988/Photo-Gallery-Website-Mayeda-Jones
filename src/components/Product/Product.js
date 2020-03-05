@@ -1,8 +1,5 @@
-import React from "react";
-import "./Product.css";
-
-// STATELESS FUNCTIONAL COMPONENT
-// RECEIVES PROPS PASSED DOWN FROM APP COMPONENT
+import React from 'react';
+import './Product.css';
 
 export default function Product({ onAddToCartClick, price, title }) {
   return (
