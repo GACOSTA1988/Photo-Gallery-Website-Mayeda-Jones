@@ -1,4 +1,5 @@
-const stripe = require("stripe")("your-secrect-key"); // add your secret key here
+require("dotenv").config();
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 exports.handler = (event, context, callback) => {
   // Only allow POST

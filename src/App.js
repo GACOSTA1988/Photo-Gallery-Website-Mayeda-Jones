@@ -41,7 +41,7 @@ function App() {
     (acc, item) => acc + item.price * item.quantity,
     0
   );
-
+  console.log(process.env.REACT_APP_API_KEY);
   return (
     <div className="App">
       <header className="App-header">
@@ -61,7 +61,7 @@ function App() {
         </div>
         <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
         {itemsInCart.length > 0 && (
-          <StripeProvider apiKey="your_public_key">
+          <StripeProvider apiKey="pk_test_SP6j7jpwnenOYouCw7MsULdD00tFv70Etl">
             <Elements>
               <CheckoutForm totalCost={totalCost} />
             </Elements>
