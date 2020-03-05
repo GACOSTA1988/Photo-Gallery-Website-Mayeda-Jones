@@ -61,7 +61,7 @@ function App() {
         </div>
         <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
         {itemsInCart.length > 0 && (
-          <StripeProvider apiKey="pk_test_SP6j7jpwnenOYouCw7MsULdD00tFv70Etl">
+          <StripeProvider apiKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}>
             <Elements>
               <CheckoutForm totalCost={totalCost} />
             </Elements>
