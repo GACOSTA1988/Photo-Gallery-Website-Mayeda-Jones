@@ -30,7 +30,6 @@ export default class AdminHome extends Component {
       );
     }
     localStorage.setItem("user_id", firebase.auth().currentUser.uid);
-    return <Photos />
-    );
+    return <Photos />;
   }
 }

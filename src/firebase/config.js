@@ -9,16 +9,14 @@ const config = {
   messagingSenderId: "98940417724",
   appId: "1:98940417724:web:795f8f2eaea6d2667c02b9",
   measurementId: "G-BNQ4F7F5QW"
-}
+};
 
-export cosnt firebaseui={
-    signInFlow: "popup",
-    signInOptions:[
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-        firebase.auth.PhoneAuthProvider.PROVIDER_ID
-    ]
-}
-
+export const firebaseui = {
+  signInFlow: "popup",
+  signInOptions: [
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    firebase.auth.PhoneAuthProvider.PROVIDER_ID
+  ]
+};
 firebase.initializeApp(config);
-
-export default firebase
+export default firebase;
