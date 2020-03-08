@@ -6,7 +6,7 @@ import Cart from "../Cart/Cart";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import logo from "../../Logo.png";
 import stars from "../../stars.png";
-import "../../App.css";
+import "./CartContainer.css";
 
 export default function App() {
   const [itemsInCart, setItemsInCart] = useState([]);

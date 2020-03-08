@@ -2,6 +2,7 @@ import React from "react";
 import GoogleFontLoader from "react-google-font-loader";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
+import * as josh from "../../assets/images/about/josh.png";
 
 function About() {
   var aboutStyle = {
@@ -13,10 +14,17 @@ function About() {
     fontFamily: '"Bebas Neue", cursive',
     textAlign: "center"
   };
+  const joshImageStyle = {
+    width: "45%",
+    height: "45%",
+    padding: "2.5px",
+    alignItems: "right"
+  };
   return (
     <Container>
       <div style={aboutStyle}>
         <h1>ABOUT</h1>
+        <img style={joshImageStyle} src={josh} alt="josh" />
         <p>
           Thanks for visiting! <br />
           My name is Josh Mayeda-Jones. <br />
