@@ -1,4 +1,5 @@
-import firebase from "firebase";
+import firebase from "firebase/app";
+import "firebase/storage";
 
 const config = {
   apiKey: "AIzaSyB9n3L4Jr039LIkq6cNDCmUOusm6r7-Uz4",
@@ -11,12 +12,8 @@ const config = {
   measurementId: "G-BNQ4F7F5QW"
 };
 
-export const firebaseui = {
-  signInFlow: "popup",
-  signInOptions: [
-    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    firebase.auth.PhoneAuthProvider.PROVIDER_ID
-  ]
-};
 firebase.initializeApp(config);
-export default firebase;
+
+const storage = firebase.storage();
+
+export { storage, firebase as default };
