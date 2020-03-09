@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import "./HomeDirectory.css";
 
 function HomeDirectory() {
-  var homeDirectoryStyle = {
+  const homeDirectoryStyle = {
     marginTop: "15px",
     color: "black",
     fontFamily: '"Bebas Neue", cursive',
