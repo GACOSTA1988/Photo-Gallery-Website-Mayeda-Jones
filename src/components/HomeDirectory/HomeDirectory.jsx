@@ -16,7 +16,7 @@ function HomeDirectory() {
     <Container>
       <div className="HomeBackground" style={homeDirectoryStyle}>
         <h1>
-          <Link to="/gallery">GALLERY</Link>
+          <Link to="/mainGallery">GALLERY</Link>
         </h1>
         <h1>
           <Link to="/about">ABOUT</Link>

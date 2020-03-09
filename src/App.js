@@ -17,9 +17,10 @@ export default class App extends React.Component {
       <Container>
         <div>
           <Header />
-          <MainGallery />
+          {/* <MainGallery /> */}
           <Switch>
             <Route exact path="/" component={HomeDirectory} />
+            <Route exact path="/mainGallery" component={MainGallery} />
             <Route exact path="/admin" component={ImageUpload} />
             <Route exact path="/about" component={About} />
             <Route exact path="/shoppingCart" component={CartContainer} />
