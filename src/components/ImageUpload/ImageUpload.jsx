@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { storage } from "../../firebase/config";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Container from "react-bootstrap/Container";
 
 class ImageUpload extends Component {
   constructor(props) {
@@ -57,17 +59,19 @@ class ImageUpload extends Component {
     };
     return (
       <div style={style}>
-        <progress value={this.state.progress} max="100" />
-        <br />
-        <input type="file" onChange={this.handleChange} />
-        <button onClick={this.handleUpload}>Upload</button>
-        <br />
-        <img
-          src={this.state.url || "http://via.placeholder.com/400x300"}
-          alt="Uploaded images"
-          height="300"
-          width="400"
-        />
+        <Container>
+          <progress value={this.state.progress} max="100" />
+          <br />
+          <input type="file" onChange={this.handleChange} />
+          <button onClick={this.handleUpload}>Upload</button>
+          <br />
+          <img
+            src={this.state.url || "http://via.placeholder.com/400x300"}
+            alt="Uploaded images"
+            height="300"
+            width="400"
+          />
+        </Container>
       </div>
     );
   }

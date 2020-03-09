@@ -5,6 +5,7 @@ import CartContainer from "./components/CartContainer/CartContainer";
 import ImageUpload from "./components/ImageUpload/ImageUpload";
 import About from "./components/About/About";
 import Header from "./components/Header/Header";
+import HomeDirectory from "./components/HomeDirectory/HomeDirectory";
 import Container from "react-bootstrap/Container";
 import GoogleFontLoader from "react-google-font-loader";
 
@@ -13,12 +14,13 @@ export default class App extends React.Component {
     return (
       <Container>
         <div>
-          <ImageUpload />
+          <Header />
+
           <Switch>
-            <Header />
-            <About />
+            <Route exact path="/" component={HomeDirectory} />
+            <Route exact path="/admin" component={ImageUpload} />
+            <Route exact path="/about" component={About} />
             <Route exact path="/shoppingCart" component={CartContainer} />
-            <CartContainer />
           </Switch>
         </div>
       </Container>

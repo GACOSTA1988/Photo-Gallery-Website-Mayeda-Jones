@@ -33,37 +33,34 @@ export default function App() {
     (acc, item) => acc + item.price * item.quantity,
     0
   );
-  const content = {
-    backgroundImage: "url(${stars})"
-  };
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="App-header-text">Josh Mayeda Jones Photography</h1>
       </header>
-      <div style={content}>
-        <main className="App-shop">
-          <div className="App-products">
-            {items.map(item => (
-              <Product
-                key={item.title}
-                title={item.title}
-                price={item.price}
-                onAddToCartClick={() => handleAddToCartClick(item.id)}
-              />
-            ))}
-          </div>
-          <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
-          {itemsInCart.length > 0 && (
-            <StripeProvider apiKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}>
-              <Elements>
-                <CheckoutForm totalCost={totalCost} />
-              </Elements>
-            </StripeProvider>
-          )}
-        </main>
-      </div>
+
+      <main className="App-shop">
+        <div className="App-products">
+          {items.map(item => (
+            <Product
+              key={item.title}
+              title={item.title}
+              price={item.price}
+              onAddToCartClick={() => handleAddToCartClick(item.id)}
+            />
+          ))}
+        </div>
+        <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
+        {itemsInCart.length > 0 && (
+          <StripeProvider apiKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}>
+            <Elements>
+              <CheckoutForm totalCost={totalCost} />
+            </Elements>
+          </StripeProvider>
+        )}
+      </main>
     </div>
   );
 }
