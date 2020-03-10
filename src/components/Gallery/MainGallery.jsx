@@ -3,6 +3,7 @@ import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../../api/Photos";
 import Container from "react-bootstrap/Container";
+import Navbar from "../Navbar/Navbar.jsx";
 
 function MainGallery() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -23,6 +24,7 @@ function MainGallery() {
   };
   return (
     <Container>
+      <Navbar />
       <div style={mainGalleryStyle}>
         <Gallery photos={photos} onClick={openLightbox} />
         <ModalGateway>

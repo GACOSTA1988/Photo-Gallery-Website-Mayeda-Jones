@@ -3,6 +3,7 @@ import GoogleFontLoader from "react-google-font-loader";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import * as josh from "../../assets/images/about/josh.png";
+import Navbar from "../Navbar/Navbar.jsx";
 
 function About() {
   var aboutStyle = {
@@ -22,6 +23,7 @@ function About() {
   };
   return (
     <Container>
+      <Navbar />
       <div style={aboutStyle}>
         <h1>ABOUT</h1>
         <img style={joshImageStyle} src={josh} alt="josh" />

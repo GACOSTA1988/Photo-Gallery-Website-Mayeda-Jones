@@ -9,7 +9,6 @@ import HomeDirectory from "./components/HomeDirectory/HomeDirectory";
 import MainGallery from "./components/Gallery/MainGallery";
 import Container from "react-bootstrap/Container";
 import GoogleFontLoader from "react-google-font-loader";
-// import Gallery from "react-photo-gallery";
 
 export default class App extends React.Component {
   render() {
@@ -17,7 +16,6 @@ export default class App extends React.Component {
       <Container>
         <div>
           <Header />
-          {/* <MainGallery /> */}
           <Switch>
             <Route exact path="/" component={HomeDirectory} />
             <Route exact path="/mainGallery" component={MainGallery} />

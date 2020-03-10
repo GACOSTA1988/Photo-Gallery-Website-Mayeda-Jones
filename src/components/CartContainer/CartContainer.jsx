@@ -4,7 +4,7 @@ import { photos } from "../../api/Photos";
 import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
-import logo from "../../Logo.png";
+import Navbar from "../Navbar/Navbar.jsx";
 
 import "./CartContainer.css";
 import Container from "react-bootstrap/Container";
@@ -38,6 +38,7 @@ export default function App() {
   return (
     <Container>
       <div className="App">
+        <Navbar />
         <main className="App-shop">
           <div className="App-products">
             {photos.map(item => (
