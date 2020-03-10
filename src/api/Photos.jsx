@@ -2,7 +2,7 @@ export const photos = [
   // 1
   {
     id: 1,
-    title: "Desert",
+    title: "BabyDonks",
     price: 50,
     category: "Adventure",
     src:
@@ -13,7 +13,7 @@ export const photos = [
   //   2
   {
     id: 2,
-    title: "Desert",
+    title: "DesertLandscape",
     price: 50,
     category: "Adventure",
     src:
@@ -24,7 +24,7 @@ export const photos = [
   //   3
   {
     id: 3,
-    title: "Desert",
+    title: "Moon",
     price: 50,
     category: "Adventure",
     src:
@@ -36,7 +36,7 @@ export const photos = [
   //   4
   {
     id: 4,
-    title: "Desert",
+    title: "Stars",
     price: 50,
     category: "Adventure",
     src:
@@ -46,7 +46,7 @@ export const photos = [
   },
   {
     id: 5,
-    title: "Desert",
+    title: "DesertHike",
     price: 50,
     category: "Adventure",
     src:
@@ -56,7 +56,7 @@ export const photos = [
   },
   {
     id: 6,
-    title: "Desert",
+    title: "Waterfall",
     price: 50,
     category: "Adventure",
     src:
@@ -66,7 +66,7 @@ export const photos = [
   },
   {
     id: 7,
-    title: "Desert",
+    title: "CanyonHike",
     price: 50,
     category: "Adventure",
     src:
@@ -76,7 +76,7 @@ export const photos = [
   },
   {
     id: 8,
-    title: "Desert",
+    title: "ColoradoFall",
     price: 50,
     category: "Adventure",
     src:
@@ -87,7 +87,7 @@ export const photos = [
   //   3
   {
     id: 9,
-    title: "Desert",
+    title: "DesertPup",
     price: 50,
     category: "Adventure",
     src:
@@ -97,7 +97,7 @@ export const photos = [
   },
   {
     id: 10,
-    title: "Desert",
+    title: "MoonOverMountains",
     price: 50,
     category: "Adventure",
     src:
@@ -108,7 +108,7 @@ export const photos = [
 
   {
     id: 11,
-    title: "Desert",
+    title: "Donkey",
     price: 50,
     category: "Adventure",
     src:
@@ -118,7 +118,7 @@ export const photos = [
   },
   {
     id: 12,
-    title: "Desert",
+    title: "Buffalo",
     price: 50,
     category: "Adventure",
     src:
@@ -130,7 +130,7 @@ export const photos = [
   //   10
   {
     id: 13,
-    title: "Desert",
+    title: "FoggyFalls",
     price: 50,
     category: "Adventure",
     src:
@@ -142,7 +142,7 @@ export const photos = [
   //   11
   {
     id: 14,
-    title: "Desert",
+    title: "Explore",
     price: 50,
     category: "Adventure",
     src:
@@ -153,7 +153,7 @@ export const photos = [
   //   12
   {
     id: 15,
-    title: "Desert",
+    title: "RiverWatch",
     price: 50,
     category: "Adventure",
     src:
@@ -164,7 +164,7 @@ export const photos = [
   //   13
   {
     id: 16,
-    title: "Desert",
+    title: "AlpineLace",
     price: 50,
     category: "Adventure",
     src:
@@ -176,7 +176,7 @@ export const photos = [
 
   {
     id: 17,
-    title: "Desert",
+    title: "TheTaco",
     price: 50,
     category: "Adventure",
     src:
@@ -186,7 +186,7 @@ export const photos = [
   },
   {
     id: 18,
-    title: "Desert",
+    title: "BuffaloFace",
     price: 50,
     category: "Adventure",
     src:
@@ -196,7 +196,7 @@ export const photos = [
   },
   {
     id: 19,
-    title: "Desert",
+    title: "HillPeople",
     price: 50,
     category: "Adventure",
     src:
@@ -206,7 +206,7 @@ export const photos = [
   },
   {
     id: 20,
-    title: "Desert",
+    title: "TheGorge",
     price: 50,
     category: "Adventure",
     src:

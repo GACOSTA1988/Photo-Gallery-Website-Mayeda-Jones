@@ -29,7 +29,7 @@
   text-align: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 80%) {
   .App-products {
     display: flex;
     justify-content: center;

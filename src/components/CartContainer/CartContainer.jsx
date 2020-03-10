@@ -5,7 +5,7 @@ import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import logo from "../../Logo.png";
-import stars from "../../stars.png";
+
 import "./CartContainer.css";
 import Container from "react-bootstrap/Container";
 
@@ -38,16 +38,12 @@ export default function App() {
   return (
     <Container>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-header-text">Josh Mayeda Jones Photography</h1>
-        </header>
-
         <main className="App-shop">
           <div className="App-products">
             {photos.map(item => (
               <Product
                 key={item.title}
+                src={item.src}
                 title={item.title}
                 price={item.price}
                 onAddToCartClick={() => handleAddToCartClick(item.id)}
