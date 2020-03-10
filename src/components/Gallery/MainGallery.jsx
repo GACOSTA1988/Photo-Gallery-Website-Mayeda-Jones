@@ -1,7 +1,8 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { photos } from "./Photos";
+import { photos } from "../../api/Photos";
+// import { photos } from "./Photos";
 import Container from "react-bootstrap/Container";
 
 function MainGallery() {

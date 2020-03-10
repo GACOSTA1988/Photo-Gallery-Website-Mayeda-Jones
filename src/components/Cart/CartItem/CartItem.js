@@ -1,5 +1,5 @@
-import React from 'react';
-import './CartItem.css';
+import React from "react";
+import "./CartItem.css";
 
 export default function CartItem({ title, cost, quantity }) {
   return (

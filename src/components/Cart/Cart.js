@@ -1,6 +1,6 @@
-import React from 'react';
-import CartItem from './CartItem/CartItem';
-import './Cart.css';
+import React from "react";
+import CartItem from "./CartItem/CartItem";
+import "./Cart.css";
 
 export default function Cart({ itemsInCart, totalCost }) {
   return (

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Elements, StripeProvider } from "react-stripe-elements";
-import items from "../../api/items";
+import { photos } from "../../api/Photos";
 import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import logo from "../../Logo.png";
 import stars from "../../stars.png";
 import "./CartContainer.css";
+import Container from "react-bootstrap/Container";
 
 export default function App() {
   const [itemsInCart, setItemsInCart] = useState([]);
@@ -24,7 +25,7 @@ export default function App() {
       }
 
       // otherwise, add new item to cart
-      const item = items.find(item => item.id === id);
+      const item = photos.find(item => item.id === id);
       return [...itemsInCart, { ...item, quantity: 1 }];
     });
   };
@@ -35,32 +36,35 @@ export default function App() {
   );
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-header-text">Josh Mayeda Jones Photography</h1>
-      </header>
+    <Container>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-header-text">Josh Mayeda Jones Photography</h1>
+        </header>
 
-      <main className="App-shop">
-        <div className="App-products">
-          {items.map(item => (
-            <Product
-              key={item.title}
-              title={item.title}
-              price={item.price}
-              onAddToCartClick={() => handleAddToCartClick(item.id)}
-            />
-          ))}
-        </div>
-        <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
-        {itemsInCart.length > 0 && (
-          <StripeProvider apiKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}>
-            <Elements>
-              <CheckoutForm totalCost={totalCost} />
-            </Elements>
-          </StripeProvider>
-        )}
-      </main>
-    </div>
+        <main className="App-shop">
+          <div className="App-products">
+            {photos.map(item => (
+              <Product
+                key={item.title}
+                title={item.title}
+                price={item.price}
+                onAddToCartClick={() => handleAddToCartClick(item.id)}
+              />
+            ))}
+          </div>
+
+          <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
+          {itemsInCart.length > 0 && (
+            <StripeProvider apiKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}>
+              <Elements>
+                <CheckoutForm totalCost={totalCost} />
+              </Elements>
+            </StripeProvider>
+          )}
+        </main>
+      </div>
+    </Container>
   );
 }
