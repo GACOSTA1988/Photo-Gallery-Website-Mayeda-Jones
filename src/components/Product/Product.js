@@ -7,9 +7,9 @@ export default function Product({ onAddToCartClick, price, title, src }) {
     width: "45%",
     height: "25%",
     margin: "0 auto",
-    padding: "2.5px",
-    textAlign: "left",
-    alignItems: "left"
+    padding: "2.5px"
+    // textAlign: "left",
+    // alignItems: "left",
   };
   return (
     <Container>

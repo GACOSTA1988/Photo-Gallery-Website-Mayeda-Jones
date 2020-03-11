@@ -10,8 +10,6 @@ function NavBar(props) {
     fontFamily: "BowlbyOneSC",
     marginTop: "10px",
     textAlign: "center"
-
-    // margin: "0 auto"
   };
   return (
     <div style={navBarAddStyles}>
