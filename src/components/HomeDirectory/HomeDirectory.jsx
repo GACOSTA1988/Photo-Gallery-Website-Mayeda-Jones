@@ -10,9 +10,9 @@ function HomeDirectory() {
     marginTop: "15px",
     color: "black",
     fontFamily: '"Bebas Neue", cursive',
-    textAlign: "center",
-    backgroundImage: `url(${Logo})`,
-    backgroundSize: "cover"
+    textAlign: "center"
+    // backgroundImage: `url(${Logo})`,
+    // backgroundSize: "cover"
   };
   return (
     <Container>
