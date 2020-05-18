@@ -1,51 +1,61 @@
-# Serverless Shop Tutorial
+# Josh Mayeda Jones Photo Gallery
 
-[View demo](https://serverless-shop-demo.netlify.com/)
+## By **George Acosta**
 
-There's also an accompanying [tutorial blog post](https://mitchgavan.com/react-serverless-shop/).
+This repo is the e-commerce platform for Josh Mayeda Jones Photography
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![screenshot of landing page for website](images/landingPage.png)
 
-This project is based on [Create React App v2](https://github.com/facebookincubator/create-react-app) and [netlify-lambda v1](https://github.com/netlify/netlify-lambda). (For more information about Create react App, check their full [documentation](https://github.com/facebookincubator/create-react-app#create-react-app).)
+## Setup/Installation Requirements
 
-The main addition is a new folder: `src/lambda`. Each JavaScript file in there will automatically be prepared for Lambda function deployment.
+![image of Github repository file system](images/gitHubRepo.png "read")
 
-## Local Development
+### Zip:
 
-Before developing, clone the repository and run `npm install` from the root of the repo to install all dependencies.
+1. Click [here](https://github.com/GACOSTA1988/Photo-Gallery-Website-Mayeda-Jones) to go to the repository location where you will find the clone/download menu.
 
-### Option 1: Starting both servers at once
+2. Navigate to the directory (folder) that contains your browser's downloads.
+3. Double-click on **Photo-Gallery-Website-Mayeda-Jones** directory (folder).
+4. Open the directory contents by extracting/unzipping the documents from the folder.
 
-Most people should be able to get up and running just by running:
+##### Mac OS Installation
 
-```bash
-npm start
-```
+1. On OS X Run NPM I in the terminal
+2. Once NPM Installation is complete, Run NPM Start.
 
-This uses [npm-run-all](https://github.com/mysticatea/npm-run-all#readme) to run the functions dev server and app dev server concurrently.
+##### Windows OS Installation
 
-### Option 2: Start each server individually
+1. On Windows Run NPM I in the terminal
+2. Once NPM Installation is complete, Run NPM Start.
 
-**Run the functions dev server**
+## Specifications
 
-From inside the project folder, run:
+---
 
-```
-npm start:lambda
-```
+## Technologies Used
 
-This will open a local server running at `http://localhost:9000` serving your Lambda functions, updating as you make changes in the `src/lambda` folder.
+- React 16.8.0
+- Firebase 7.10.0
+- FirebaseUI 4.4.0
+- react-dropzone 10.2.1
+- react-photo-gallery 8.0.0
+- stripe 6.23.1
+- netlify-lambda 1.3.3
 
-You can then access your functions directly at `http://localhost:9000/{function_name}`, but to access them with the app, you'll need to start the app dev server. Under the hood, this uses `react-scripts`' [advanced proxy feature](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#configuring-the-proxy-manually) with the `setupProxy.js` file.
+---
 
-**Run the app dev server**
+## Troubleshooting
 
-While the functions server is still running, open a new terminal tab and run:
+### Support and Contact
 
-```
-npm run start:app
-```
+If you run into any issues running **Josh Mayeda Jones Photo Gallery**, please contact **George Acosta**.
 
-This will start the normal create-react-app dev server and open your app at `http://localhost:3000`.
+### License
 
-Local in-app requests to the relative path `/.netlify/functions/*` will automatically be proxied to the local functions dev server.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Copyright (c) 2020 **George Acosta**
