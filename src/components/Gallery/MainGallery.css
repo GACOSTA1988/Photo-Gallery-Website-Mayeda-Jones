@@ -1,0 +1,11 @@
+.mainGalleryContainer {
+  margin-top: 15px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  background-color: black;
+  border: 15px solid aliceblue;
+  border-radius: 8px;
+  filter: drop-shadow(0.08em 0.08em rgb(168, 177, 199));
+}

@@ -4,6 +4,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../../api/Photos";
 import Container from "react-bootstrap/Container";
 import Navbar from "../Navbar/Navbar.jsx";
+import "./MainGallery.css";
 
 function MainGallery() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -19,14 +20,10 @@ function MainGallery() {
     setViewerIsOpen(false);
   };
 
-  const mainGalleryStyle = {
-    marginTop: "15px",
-    // width: "80%",
-  };
   return (
     <Container fluid>
       <Navbar />
-      <div style={mainGalleryStyle}>
+      <div className="mainGalleryContainer">
         <Gallery photos={photos} onClick={openLightbox} />
         <ModalGateway>
           {viewerIsOpen ? (
@@ -43,6 +40,8 @@ function MainGallery() {
           ) : null}
         </ModalGateway>
       </div>
+      <br />
+      <br />
     </Container>
   );
 }
