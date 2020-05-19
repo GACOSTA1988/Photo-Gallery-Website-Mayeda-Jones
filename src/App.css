@@ -1,0 +1,7 @@
+.AppBackground {
+  background-image: url("./assets/images/landscape/desert.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 0;
+}

@@ -1,0 +1,13 @@
+.NavbarMain {
+  background-color: black;
+  font-weight: bolder;
+  font-family: BowlbyOneSC;
+  margin-top: 15px;
+  text-align: center;
+  width: 82%;
+  height: 80px;
+  /* font-size: 30px; */
+  border-radius: 8px;
+  margin-right: auto;
+  margin-left: auto;
+}

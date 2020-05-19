@@ -1,0 +1,14 @@
+.Header {
+  border: 15px solid rgb(249, 247, 247);
+  border-radius: 8px;
+  font-family: Bebas Neue, cursive;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  font-size: 60px;
+  font-weight: bold;
+  color: aliceblue;
+  filter: drop-shadow(0.07em 0.07em rgb(168, 177, 199));
+  mix-blend-mode: luminosity;
+}

@@ -20,10 +20,11 @@ function MainGallery() {
   };
 
   const mainGalleryStyle = {
-    marginTop: "15px"
+    marginTop: "15px",
+    // width: "80%",
   };
   return (
-    <Container>
+    <Container fluid>
       <Navbar />
       <div style={mainGalleryStyle}>
         <Gallery photos={photos} onClick={openLightbox} />
@@ -32,10 +33,10 @@ function MainGallery() {
             <Modal onClose={closeLightbox}>
               <Carousel
                 currentIndex={currentImage}
-                views={photos.map(x => ({
+                views={photos.map((x) => ({
                   ...x,
                   srcset: x.srcSet,
-                  caption: x.title
+                  caption: x.title,
                 }))}
               />
             </Modal>

@@ -4,11 +4,11 @@
 
 This repo is the e-commerce platform for Josh Mayeda Jones Photography
 
-![screenshot of landing page for website](images/landingPage.png)
+![screenshot of landing page for website](src/assets/images/readme/landingPage.png)
 
 ## Setup/Installation Requirements
 
-![image of Github repository file system](images/gitHubRepo.png "read")
+![image of Github repository file system](src/assets/images/readme/gitHubRepo.png "read")
 
 ### Zip:
 

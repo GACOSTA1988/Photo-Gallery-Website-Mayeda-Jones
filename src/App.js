@@ -9,11 +9,12 @@ import HomeDirectory from "./components/HomeDirectory/HomeDirectory";
 import MainGallery from "./components/Gallery/MainGallery";
 import Container from "react-bootstrap/Container";
 import GoogleFontLoader from "react-google-font-loader";
+import "./App.css";
 
 export default class App extends React.Component {
   render() {
     return (
-      <Container>
+      <Container fluid className="AppBackground">
         <div>
           <Header />
 

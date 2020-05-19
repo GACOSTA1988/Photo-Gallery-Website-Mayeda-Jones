@@ -1,6 +1,22 @@
-/* .HomeBackground {
-  background-image: url("../../assets/images/landscape/desert.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-  
-} */
+.HomeBackground {
+  margin-top: 15px;
+  height: 710px;
+}
+
+.HomeText {
+  margin-top: 85px;
+  font-size: 80px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-family: Bebas Neue, cursive;
+}
+
+a:hover {
+  font-size: 95px;
+  text-decoration: none;
+  color: blanchedalmond;
+  font-family: Bebas Neue, cursive;
+}
