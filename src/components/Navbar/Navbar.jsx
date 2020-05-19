@@ -5,55 +5,39 @@ import "./Navbar.css";
 import Container from "react-bootstrap/Container";
 
 function NavBar(props) {
+  const metaData = [
+    {
+      href: "#/",
+      text: "HOME",
+    },
+    {
+      href: "#/mainGallery",
+      text: "GALLERY",
+    },
+    {
+      href: "#/about",
+      text: "ABOUT",
+    },
+    {
+      href: "#/shoppingCart",
+      text: "SHOP",
+    },
+  ];
+  const renderAnchorTags = (metaData) => {
+    return metaData.map((data) => {
+      return (
+        <span className="NavbarText">
+          <a href={data.href} id="navbarHome">
+            {data.text}
+          </a>
+        </span>
+      );
+    });
+  };
+
   return (
     <Container fluid>
-      <div className="NavbarMainContainer">
-        <br />
-        <a
-          href="#/"
-          style={{
-            fontWeight: "bolder",
-            fontFamily: "BowlbyOneSC",
-            fontSize: "2vw",
-            marginBottom: "5px",
-          }}
-        >
-          HOME
-        </a>
-        <a
-          href="#/mainGallery"
-          style={{
-            fontWeight: "bolder",
-            fontFamily: "BowlbyOneSC",
-            fontSize: "2vw",
-            marginLeft: "5%",
-          }}
-        >
-          GALLERY
-        </a>
-        <a
-          href="#/about"
-          style={{
-            fontWeight: "bolder",
-            fontFamily: "BowlbyOneSC",
-            fontSize: "2vw",
-            marginLeft: "5%",
-          }}
-        >
-          ABOUT
-        </a>
-        <a
-          href="#/shoppingCart"
-          style={{
-            fontWeight: "bolder",
-            fontFamily: "BowlbyOneSC",
-            fontSize: "2vw",
-            marginLeft: "5%",
-          }}
-        >
-          SHOP
-        </a>
-      </div>
+      <div className="NavbarMainContainer">{renderAnchorTags(metaData)}</div>
     </Container>
   );
 }

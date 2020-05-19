@@ -13,20 +13,15 @@ function About() {
     color: "black",
     // fontWeight: "bold",
     fontFamily: '"Bebas Neue", cursive',
-    textAlign: "center"
+    textAlign: "center",
   };
-  const joshImageStyle = {
-    width: "45%",
-    height: "45%",
-    padding: "2.5px",
-    alignItems: "right"
-  };
+
   return (
-    <Container>
+    <Container fluid>
       <Navbar />
       <div style={aboutStyle}>
         <h1>ABOUT</h1>
-        <img style={joshImageStyle} src={josh} alt="josh" />
+        <img id="JoshImage" src={josh} alt="josh" />
         <p>
           Thanks for visiting! <br />
           My name is Josh Mayeda-Jones. <br />
