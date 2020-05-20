@@ -46,7 +46,7 @@ function MainGallery() {
                 GALLERY
               </Dropdown.Item>
               <Dropdown.Item href="#/shoppingCart" as="a">
-                GALLERY
+                PRINTS
               </Dropdown.Item>
             </DropdownButton>
           </div>
