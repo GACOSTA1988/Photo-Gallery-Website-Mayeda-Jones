@@ -1,6 +1,34 @@
+.AboutHomeContainer {
+  width: 80%;
+  height: 700px;
+  background-color: rgb(161, 186, 208);
+  margin-top: 15px;
+  border: 15px solid rgb(249, 247, 247);
+  border-radius: 8px;
+  filter: drop-shadow(0.09em 0.09em rgb(168, 177, 199));
+  color: black;
+  font-family: Bebas Neue, cursive;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #JoshImage {
-  width: 45%;
-  height: 45%;
-  padding: 2.5px;
-  align-items: "right";
+  margin-top: 80px;
+  margin-left: 20px;
+  width: 35%;
+  height: 35%;
+  float: left;
+  border-radius: 8px;
+  display: inline;
+  border: 10px solid rgb(7, 7, 7);
+}
+
+.aboutText {
+  color: black;
+  display: inline;
+}
+
+#headers {
+  color: tomato;
 }
