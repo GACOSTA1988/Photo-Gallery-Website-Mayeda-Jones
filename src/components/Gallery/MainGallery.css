@@ -17,16 +17,20 @@
   border: 25px double rgb(11, 11, 11, 0.6);
 }
 .dropDownContainer {
-  margin-left: 70%;
+  margin-left: 78%;
   margin-top: 20px;
   height: 70px;
   border: 10px solid rgb(11, 11, 11, 0.8);
 }
 #headerText {
-  font-size: 4vw;
+  font-size: 4.5vw;
   margin-left: 15px;
-  font-family: "BowlbyOneSC";
-  color: #acc4d5;
+  /* font-family: "BowlbyOneSC";
+   */
+  font-family: Bebas Neue, cursive;
+  /* color: #acc4d5; */
+  opacity: 0.6;
+  color: aliceblue;
 }
 .headerMenuWrapper {
   display: inline-flex;

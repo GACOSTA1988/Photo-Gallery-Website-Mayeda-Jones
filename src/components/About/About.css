@@ -1,21 +1,22 @@
 .AboutHomeContainer {
   width: 80%;
-  height: 700px;
-  background-color: rgb(161, 186, 208);
-  margin-top: 15px;
+  height: 820px;
+  background: rgb(11, 11, 11, 0.6);
   border: 15px solid rgb(249, 247, 247);
   border-radius: 8px;
-  filter: drop-shadow(0.09em 0.09em rgb(168, 177, 199));
-  color: black;
+
+  border: 25px double rgb(11, 11, 11, 0.6);
   font-family: Bebas Neue, cursive;
-  text-align: center;
+  /* text-align: center; */
   margin-left: auto;
   margin-right: auto;
 }
 
 #JoshImage {
-  margin-top: 80px;
+  margin-top: 100px;
   margin-left: 20px;
+  margin-right: 15px;
+  margin-bottom: 150px;
   width: 35%;
   height: 35%;
   float: left;
@@ -25,10 +26,31 @@
 }
 
 .aboutText {
-  color: black;
+  color: aliceblue;
   display: inline;
+  font-size: 1vw;
+}
+.textContainer {
+  margin-right: 40px;
 }
 
 #headers {
-  color: tomato;
+  margin-top: 30px;
+  font-size: 2vw;
+  color: aliceblue;
+}
+.mainScreenContainer {
+  height: 830px;
+}
+#mainGalleryAnchorTags {
+  text-decoration: none;
+  margin-right: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+#mainGalleryAnchorTags:hover {
+  text-decoration: none;
+  color: blanchedalmond;
+  font-size: 30px;
 }

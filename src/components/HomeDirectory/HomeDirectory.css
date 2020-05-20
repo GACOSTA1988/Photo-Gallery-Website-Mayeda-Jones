@@ -1,22 +1,22 @@
 .HomeBackground {
-  margin-top: 15px;
-  height: 710px;
+  height: 210px;
 }
 
 .HomeText {
-  margin-top: 85px;
-  font-size: 80px;
-  text-align: center;
-  opacity: 0.7;
+  /* margin-top: 90%; */
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-evenly;
 }
-a {
+#HomeAnchorTags {
   text-decoration: none;
   color: white;
+  font-size: 5vw;
   font-family: Bebas Neue, cursive;
 }
 
-a:hover {
-  font-size: 95px;
+#HomeAnchorTags:hover {
+  font-size: 6vw;
   text-decoration: none;
   color: blanchedalmond;
   font-family: Bebas Neue, cursive;
