@@ -1,9 +1,14 @@
 .CheckoutForm {
-  border-top: 1px solid #eee;
-  margin: 0 auto;
-  max-width: 800px;
+  margin-top: 50px;
+  border: 25px solid rgb(11, 11, 11, 0.6);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 75%;
   padding-top: 2rem;
   text-align: center;
+  color: aliceblue;
+  font-weight: bolder;
+  background: rgb(11, 11, 11, 0.6);
 }
 
 .CheckoutForm-complete {
@@ -23,7 +28,7 @@
   font-weight: 600;
   line-height: 1;
   text-align: center;
-  background-color: #7fdc45;
+  background-color: black;
   color: #fff;
   cursor: pointer;
   transition-property: background-color, color;
@@ -34,7 +39,7 @@
 
 .CheckoutForm-button:hover,
 .CheckoutForm-button:focus {
-  background-color: #68b637;
+  background-color: blue;
 }
 
 .CheckoutForm-button:disabled {

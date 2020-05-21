@@ -5,43 +5,67 @@ import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import Navbar from "../Navbar/Navbar.jsx";
-
+import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 import "./CartContainer.css";
 import Container from "react-bootstrap/Container";
 
-export default function App() {
+export default function CartContainer() {
   const [itemsInCart, setItemsInCart] = useState([]);
 
-  const handleAddToCartClick = id => {
-    setItemsInCart(itemsInCart => {
-      const itemInCart = itemsInCart.find(item => item.id === id);
+  const handleAddToCartClick = (id) => {
+    setItemsInCart((itemsInCart) => {
+      const itemInCart = itemsInCart.find((item) => item.id === id);
 
       // if item is already in cart, update the quantity
       if (itemInCart) {
-        return itemsInCart.map(item => {
+        return itemsInCart.map((item) => {
           if (item.id !== id) return item;
           return { ...itemInCart, quantity: item.quantity + 1 };
         });
       }
 
       // otherwise, add new item to cart
-      const item = photos.find(item => item.id === id);
+      const item = photos.find((item) => item.id === id);
       return [...itemsInCart, { ...item, quantity: 1 }];
     });
   };
 
   const totalCost = itemsInCart.reduce(
     (acc, item) => acc + item.price * item.quantity,
-    0
+    0,
   );
 
   return (
-    <Container>
-      <div className="App">
-        <Navbar />
-        <main className="App-shop">
-          <div className="App-products">
-            {photos.map(item => (
+    <Container fluid>
+      <div className="cartMainScreen">
+        <div className="Print">
+          <div className="cartHeaderMenuWrapper">
+            <p id="cartHeaderText">PRINTS</p>
+            <div className="cartDropDownContainer">
+              <DropdownButton
+                variant=""
+                size="lg"
+                id="dropdown-item-button"
+                title="MENU"
+              >
+                <Dropdown.Item href="#/" as="a">
+                  HOME
+                </Dropdown.Item>
+                <Dropdown.Item href="#/about" as="a">
+                  ABOUT
+                </Dropdown.Item>
+                <Dropdown.Item href="#/mainGallery" as="a">
+                  GALLERY
+                </Dropdown.Item>
+                <Dropdown.Item href="#/shoppingCart" as="a">
+                  PRINTS
+                </Dropdown.Item>
+              </DropdownButton>
+            </div>
+          </div>
+          <div className="Print-products">
+            {photos.map((item) => (
               <Product
                 key={item.title}
                 src={item.src}
@@ -50,6 +74,8 @@ export default function App() {
                 onAddToCartClick={() => handleAddToCartClick(item.id)}
               />
             ))}
+            <br />
+            <br />
           </div>
 
           <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
@@ -60,8 +86,10 @@ export default function App() {
               </Elements>
             </StripeProvider>
           )}
-        </main>
+        </div>
       </div>
+      <br />
+      <br />
     </Container>
   );
 }

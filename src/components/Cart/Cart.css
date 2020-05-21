@@ -1,12 +1,15 @@
 .Cart {
-  border-top: 1px solid #eee;
+  border: 25px solid rgb(11, 11, 11, 0.6);
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 75%;
   padding-top: 2rem;
   text-align: center;
+  color: aliceblue;
+  font-weight: bold;
+  background: rgb(11, 11, 11, 0.6);
 }
 
 .Cart-total-cost {
-  font-weight: 700;
+  font-weight: 900;
   padding: 2rem;
 }
