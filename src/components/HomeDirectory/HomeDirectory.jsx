@@ -7,17 +7,49 @@ import "./HomeDirectory.css";
 function HomeDirectory() {
   return (
     <Container fluid>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="HomeBackground">
         <p className="HomeText">
-          <a href="#/mainGallery">GALLERY</a>
-        </p>
+          <a id="HomeAnchorTags" href="#/about">
+            ABOUT
+          </a>
 
-        <p className="HomeText">
-          <a href="/about">ABOUT</a>
-        </p>
+          <a id="HomeAnchorTags" href="#/mainGallery">
+            GALLERY
+          </a>
 
-        <p className="HomeText">
-          <a href="/shoppingCart" className="Links">
+          <a id="HomeAnchorTags" href="#/shoppingCart" className="Links">
             PRINTS
           </a>
         </p>

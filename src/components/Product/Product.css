@@ -1,24 +1,23 @@
 .Product {
-  border: 1px solid #eee;
+  border: 0.5px solid aliceblue;
   margin: 1rem 0;
   padding: 1rem;
   align-items: center;
-  display: inline;
-}
-
-@media (min-width: 800px) {
-  .Product {
-    margin: 0 1rem;
-    width: 33.3333%;
-  }
+  background: rgb(11, 11, 11, 0.9);
+  margin-top: 40px;
 }
 
 .Product-title {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Bebas Neue, cursive;
+  color: aliceblue;
 }
 
 .Product-price {
   margin-bottom: 1rem;
+  font-weight: 500;
+  color: aliceblue;
 }
 
 .Product-buy-button {
@@ -27,12 +26,12 @@
   padding: 0.85em 1em;
   border: 0;
   outline: 0;
-  border-radius: 100em;
+  border-radius: 8px;
   font-size: 0.9rem;
   font-weight: 600;
   line-height: 1;
   text-align: center;
-  background-color: #61dafb;
+  background-color: #529baf;
   color: #fff;
   cursor: pointer;
   transition-property: background-color, color;

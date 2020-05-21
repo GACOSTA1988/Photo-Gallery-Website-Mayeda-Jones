@@ -1,0 +1,7 @@
+@media (min-width: 800px) {
+  .Product {
+    margin: 0 1rem;
+    width: 33.3333%;
+    /* margin-top: 80px; */
+  }
+}

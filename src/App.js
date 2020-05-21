@@ -16,7 +16,7 @@ export default class App extends React.Component {
     return (
       <Container fluid className="AppBackground">
         <div>
-          <Header />
+          {/* <Header /> */}
 
           <Switch>
             <Route exact path="/" component={HomeDirectory} />

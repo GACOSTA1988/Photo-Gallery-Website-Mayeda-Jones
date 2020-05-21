@@ -5,7 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { HashRouter } from "react-router-dom";
 
-const isProduction = true;
+const isProduction = false;
 
 ReactDOM.render(
   <HashRouter>
