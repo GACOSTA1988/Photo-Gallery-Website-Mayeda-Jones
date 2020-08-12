@@ -1,12 +1,15 @@
 .HomeBackground {
-  height: 210px;
+  height: 90%;
+  box-sizing: border-box;
 }
 
 .HomeText {
-  /* margin-top: 90%; */
+  position: relative;
+  top: 50%;
   opacity: 0.8;
   display: flex;
   justify-content: space-evenly;
+  box-sizing: border-box;
 }
 #HomeAnchorTags {
   text-decoration: none;

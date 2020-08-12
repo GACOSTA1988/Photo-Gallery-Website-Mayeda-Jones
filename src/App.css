@@ -3,5 +3,6 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  margin-top: 0;
+  height: 970px;
+  box-sizing: border-box;
 }
