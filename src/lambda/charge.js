@@ -1,13 +1,13 @@
-require('dotenv').config();
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+require("dotenv").config();
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 exports.handler = (event, context, callback) => {
   // This will allow us to freeze open connections to a database
   // context.callbackWaitsForEmptyEventLoop = false;
 
   // Only allow POST
-  if (event.httpMethod !== 'POST') {
-    return callback(null, { statusCode: 405, body: 'Method Not Allowed' });
+  if (event.httpMethod !== "POST") {
+    return callback(null, { statusCode: 405, body: "Method Not Allowed" });
   }
 
   const data = JSON.parse(event.body);
@@ -16,7 +16,7 @@ exports.handler = (event, context, callback) => {
     return callback(null, {
       statusCode: 400,
       body: JSON.stringify({
-        message: 'Some required fields were not supplied.',
+        message: "Some required fields were not supplied.",
       }),
     });
   }
@@ -24,8 +24,8 @@ exports.handler = (event, context, callback) => {
   stripe.charges
     .create({
       amount: parseInt(data.amount),
-      currency: 'usd',
-      description: 'Dreamcast game shop',
+      currency: "usd",
+      description: "Josh Mayeda Jones Photography",
       source: data.token,
     })
     .then(({ status }) => {
@@ -34,7 +34,7 @@ exports.handler = (event, context, callback) => {
         body: JSON.stringify({ status }),
       });
     })
-    .catch(err => {
+    .catch((err) => {
       return callback(null, {
         statusCode: 400,
         body: JSON.stringify({

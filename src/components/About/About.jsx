@@ -18,7 +18,7 @@ function About() {
         <div className="borderContainer">
           <div className="headerMenuContainer">
             <p id="mainHeader">ABOUT</p>
-            <div className="aboutDropDownContainer">
+            {/* <div className="aboutDropDownContainer">
               <DropdownButton
                 variant=""
                 size="lg"
@@ -38,7 +38,7 @@ function About() {
                   PRINTS
                 </Dropdown.Item>
               </DropdownButton>
-            </div>
+            </div> */}
           </div>
           <div className="AboutHomeContainer">
             <div className="imageContainer">

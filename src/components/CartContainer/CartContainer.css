@@ -1,6 +1,7 @@
 .Print {
   /* background: rgb(11, 11, 11, 0.6); */
-  border: 25px double rgb(11, 11, 11, 0.6);
+  /* border: 25px double rgb(11, 11, 11, 0.6); */
+  border: 15px solid rgb(11, 11, 11, 0.6);
   max-width: 80%;
 
   margin-left: auto;

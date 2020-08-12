@@ -14,7 +14,8 @@
   margin-top: 25px;
   margin-right: auto;
   margin-left: auto;
-  border: 25px double rgb(11, 11, 11, 0.6);
+  /* border: 25px double rgb(11, 11, 11, 0.6); */
+  border: 15px solid rgb(11, 11, 11, 0.6);
 }
 .dropDownContainer {
   margin-left: 78%;

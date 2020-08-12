@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 import CartContainer from "./components/CartContainer/CartContainer";
-import ImageUpload from "./components/ImageUpload/ImageUpload";
 import About from "./components/About/About";
 import HomeDirectory from "./components/HomeDirectory/HomeDirectory";
 import MainGallery from "./components/Gallery/MainGallery";
@@ -20,7 +19,6 @@ export default class App extends React.Component {
           <Switch>
             <Route exact path="/" component={HomeDirectory} />
             <Route exact path="/mainGallery" component={MainGallery} />
-            <Route exact path="/admin" component={ImageUpload} />
             <Route exact path="/about" component={About} />
             <Route exact path="/shoppingCart" component={CartContainer} />
           </Switch>
