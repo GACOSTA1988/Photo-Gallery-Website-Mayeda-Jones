@@ -3,10 +3,7 @@ import GoogleFontLoader from "react-google-font-loader";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import * as josh from "../../assets/images/about/josh.png";
-import Navbar from "../Navbar/Navbar.jsx";
 import "./About.css";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 
 function About() {
   return (
@@ -18,27 +15,6 @@ function About() {
         <div className="borderContainer">
           <div className="headerMenuContainer">
             <p id="mainHeader">ABOUT</p>
-            {/* <div className="aboutDropDownContainer">
-              <DropdownButton
-                variant=""
-                size="lg"
-                id="dropdown-item-button"
-                title="MENU"
-              >
-                <Dropdown.Item href="#/" as="a">
-                  HOME
-                </Dropdown.Item>
-                <Dropdown.Item href="#/about" as="a">
-                  ABOUT
-                </Dropdown.Item>
-                <Dropdown.Item href="#/mainGallery" as="a">
-                  GALLERY
-                </Dropdown.Item>
-                <Dropdown.Item href="#/shoppingCart" as="a">
-                  PRINTS
-                </Dropdown.Item>
-              </DropdownButton>
-            </div> */}
           </div>
           <div className="AboutHomeContainer">
             <div className="imageContainer">
