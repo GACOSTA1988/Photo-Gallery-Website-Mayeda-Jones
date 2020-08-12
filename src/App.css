@@ -6,3 +6,13 @@
   height: 970px;
   box-sizing: border-box;
 }
+
+@media (max-width: 480px) {
+  .AppBackground {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 815px;
+    box-sizing: border-box;
+  }
+}

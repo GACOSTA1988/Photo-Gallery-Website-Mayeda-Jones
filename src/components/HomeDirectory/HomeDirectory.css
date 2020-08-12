@@ -1,26 +1,62 @@
-.HomeBackground {
-  height: 90%;
-  box-sizing: border-box;
-}
+@media (max-width: 480px) {
+  .HomeBackground {
+    height: 100%;
+    box-sizing: border-box;
+  }
 
-.HomeText {
-  position: relative;
-  top: 50%;
-  opacity: 0.8;
-  display: flex;
-  justify-content: space-evenly;
-  box-sizing: border-box;
-}
-#HomeAnchorTags {
-  text-decoration: none;
-  color: white;
-  font-size: 5vw;
-  font-family: Bebas Neue, cursive;
-}
+  .HomeText {
+    position: relative;
+    top: 40%;
+    opacity: 0.8;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  #HomeAnchorTags {
+    text-decoration: none;
+    color: white;
+    font-size: 15vw;
+    font-family: Bebas Neue, cursive;
+  }
 
-#HomeAnchorTags:hover {
-  font-size: 6vw;
-  text-decoration: none;
-  color: blanchedalmond;
-  font-family: Bebas Neue, cursive;
+  #HomeAnchorTags:hover {
+    font-size: 6vw;
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: Bebas Neue, cursive;
+  }
+  .homeLogo {
+    margin-top: 10%;
+    width: 50%;
+  }
+}
+@media (min-width: 1400px) {
+  .HomeBackground {
+    height: 90%;
+    box-sizing: border-box;
+  }
+
+  .HomeText {
+    position: relative;
+    top: 50%;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+  }
+  #HomeAnchorTags {
+    text-decoration: none;
+    color: white;
+    font-size: 5vw;
+    font-family: Bebas Neue, cursive;
+  }
+
+  #HomeAnchorTags:hover {
+    font-size: 6vw;
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: Bebas Neue, cursive;
+  }
+  .homeLogo {
+    width: 15%;
+  }
 }

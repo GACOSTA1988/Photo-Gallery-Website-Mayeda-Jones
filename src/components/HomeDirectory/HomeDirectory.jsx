@@ -1,8 +1,8 @@
 import React from "react";
 import GoogleFontLoader from "react-google-font-loader";
 import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
 import "./HomeDirectory.css";
+import logo from "../../assets/images/logos/Logo.png";
 
 function HomeDirectory() {
   return (
@@ -11,14 +11,16 @@ function HomeDirectory() {
         <a id="HomeAnchorTags" href="#/about">
           ABOUT
         </a>
-
+        <br />
         <a id="HomeAnchorTags" href="#/mainGallery">
           GALLERY
         </a>
-
+        <br />
         <a id="HomeAnchorTags" href="#/shoppingCart" className="Links">
           PRINTS
         </a>
+        <br />
+        <img className="homeLogo" src={logo} alt="Logo" />
       </p>
     </div>
   );
