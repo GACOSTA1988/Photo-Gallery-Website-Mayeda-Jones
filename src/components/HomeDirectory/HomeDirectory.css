@@ -25,8 +25,11 @@
     font-family: Bebas Neue, cursive;
   }
   .homeLogo {
-    margin-top: 10%;
     width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100%;
   }
 }
 @media (min-width: 1400px) {
@@ -58,5 +61,9 @@
   }
   .homeLogo {
     width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28%;
   }
 }

@@ -3,7 +3,6 @@ import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../../api/Photos";
 import Container from "react-bootstrap/Container";
-import Navbar from "../Navbar/Navbar.jsx";
 import "./MainGallery.css";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";

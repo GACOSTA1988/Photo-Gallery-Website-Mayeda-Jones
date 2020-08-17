@@ -4,7 +4,6 @@ import { photos } from "../../api/Photos";
 import Product from "../Product/Product";
 import Cart from "../Cart/Cart";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
-import Navbar from "../Navbar/Navbar.jsx";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import "./CartContainer.css";

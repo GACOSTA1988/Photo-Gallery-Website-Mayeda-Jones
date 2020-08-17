@@ -19,9 +19,8 @@ function HomeDirectory() {
         <a id="HomeAnchorTags" href="#/shoppingCart" className="Links">
           PRINTS
         </a>
-        <br />
-        <img className="homeLogo" src={logo} alt="Logo" />
       </p>
+      <img className="homeLogo" src={logo} alt="Logo" />
     </div>
   );
 }
