@@ -16,7 +16,7 @@ function HomeDirectory() {
           GALLERY
         </a>
         <br />
-        <a id="HomeAnchorTags" href="#/shoppingCart" className="Links">
+        <a id="HomeAnchorTags" href="#/shoppingCart">
           PRINTS
         </a>
       </p>

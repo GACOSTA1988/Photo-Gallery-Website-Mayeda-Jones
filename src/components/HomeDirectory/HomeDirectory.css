@@ -11,6 +11,7 @@
     text-align: center;
     box-sizing: border-box;
   }
+
   #HomeAnchorTags {
     text-decoration: none;
     color: white;
@@ -24,14 +25,17 @@
     color: blanchedalmond;
     font-family: Bebas Neue, cursive;
   }
+
   .homeLogo {
     width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100%;
+    /* margin-top: 100%; */
+    opacity: 0.5;
   }
 }
+
 @media (min-width: 1400px) {
   .HomeBackground {
     height: 90%;
@@ -46,6 +50,7 @@
     justify-content: space-evenly;
     box-sizing: border-box;
   }
+
   #HomeAnchorTags {
     text-decoration: none;
     color: white;
@@ -59,11 +64,13 @@
     color: blanchedalmond;
     font-family: Bebas Neue, cursive;
   }
+
   .homeLogo {
-    width: 15%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 28%;
+    width: 13%;
+    /* display: block; */
+    margin-left: 85%;
+    /* margin-right: auto; */
+    /* margin-top: 2%; */
+    opacity: 0.75;
   }
 }
