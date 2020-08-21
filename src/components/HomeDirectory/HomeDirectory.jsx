@@ -7,6 +7,7 @@ import logo from "../../assets/images/logos/Logo.png";
 function HomeDirectory() {
   return (
     <div className="HomeBackground">
+      <img src={logo} alt="Logo" />
       <p className="HomeText">
         <a id="HomeAnchorTags" href="#/about">
           ABOUT
@@ -20,7 +21,6 @@ function HomeDirectory() {
           PRINTS
         </a>
       </p>
-      <img className="homeLogo" src={logo} alt="Logo" />
     </div>
   );
 }

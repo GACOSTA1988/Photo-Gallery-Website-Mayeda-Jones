@@ -6,7 +6,7 @@
 
   .HomeText {
     position: relative;
-    top: 40%;
+    top: 15%;
     opacity: 0.8;
     text-align: center;
     box-sizing: border-box;
@@ -26,12 +26,12 @@
     font-family: Bebas Neue, cursive;
   }
 
-  .homeLogo {
+  img {
     width: 50%;
     display: block;
+    padding-top: 25%;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 100%; */
     opacity: 0.5;
   }
 }
@@ -44,7 +44,7 @@
 
   .HomeText {
     position: relative;
-    top: 50%;
+    top: 35%;
     opacity: 0.8;
     display: flex;
     justify-content: space-evenly;
@@ -65,12 +65,10 @@
     font-family: Bebas Neue, cursive;
   }
 
-  .homeLogo {
+  img {
     width: 13%;
-    /* display: block; */
     margin-left: 85%;
-    /* margin-right: auto; */
-    /* margin-top: 2%; */
+    margin-top: 2%;
     opacity: 0.75;
   }
 }
